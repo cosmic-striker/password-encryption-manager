@@ -58,13 +58,8 @@ def data_storage(data_list):
         writer = csv.writer(csvfile)
         for add_data in data_list:
             writer.writerow([add_data]) 
-    print(data_list[0])
     print("Data added successfull")
     
-
-
-
-
 # User data input
 user = input("Enter user name: ")
 password = input("Enter password ").encode('utf-8')
