@@ -54,10 +54,9 @@ def encrytion(user,Password):
 def data_storage(data_list):
     file_path = 'data_file.csv'
     # Write numbers to CSV file
-    with open(file_path, 'w', newline='') as csvfile:
+    with open(file_path, 'a', newline='') as csvfile:
         writer = csv.writer(csvfile)
-        for add_data in data_list:
-            writer.writerow([add_data]) 
+        writer.writerow(data_list) 
     print("Data added successfull")
     
 # User data input
